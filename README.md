@@ -7,18 +7,19 @@ Este projeto simula a ingestão, tratamento e análise de dados climáticos em t
 ---
 ## 📌 Índice
 
-- [📖 Visão Geral](https://github.com/Adrianogvs/aws-weather-realtime-etl/edit/main/README.md#-vis%C3%A3o-geral)
-- [📊 Fluxo do Processo](#fluxo-do-processo)
-- [🏗️ Arquitetura da Solução](#arquitetura-da-solucao)
-- [🗂️ Estrutura de Pastas](#estrutura-de-pastas)
-- [🧰 Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [🚀 Etapas do Projeto](#etapas-do-projeto)
-- [✅ Resultado Final](#resultado-final)
-- [🧠 O Que Você Aprende](#o-que-voce-aprende)
-- [🧪 Como Reproduzir](#como-reproduzir)
-- [🙋‍♂️ Autor](#autor)
+- [📖 Visão Geral](#-visão-geral)
+- [📊 Fluxo do Processo](#-fluxo-do-processo)
+- [🏗️ Arquitetura da Solução](#-arquitetura-da-solução)
+- [🗂️ Estrutura de Pastas](#-estrutura-de-pastas)
+- [🧰 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [🚀 Etapas do Projeto](#-etapas-do-projeto)
+- [✅ Resultado Final](#-resultado-final)
+- [🧠 O Que Você Aprende](#-o-que-você-aprende)
+- [🧪 Como Reproduzir](#-como-reproduzir)
+- [🙋‍♂️ Autor](#-autor)
 
-[🔝 Voltar ao topo](#real-time-weather-alert-system-com-aws-e-api-tomorrowio)
+[🔝 Voltar ao topo](#-real-time-weather-alert-system-com-aws-e-api-tomorrowio)
+
 
 
 ---
