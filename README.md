@@ -187,7 +187,7 @@ export TOMORROW_API_KEY="sua-chave-da-api"
 
 ## 🙋‍♂️ Autor
 
-Projeto desenvolvido por **Seu Nome Aqui**  
+Projeto desenvolvido por **Adriano Vilela**  
 🔗 [LinkedIn](https://www.linkedin.com/in/Adrianogvs)  
 💻 [GitHub](https://github.com/Adrianogvs)
 
