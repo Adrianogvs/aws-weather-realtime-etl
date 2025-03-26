@@ -8,16 +8,17 @@ Este projeto simula a ingestão, tratamento e análise de dados climáticos em t
 
 ## 📌 Índice
 
-- [📖 Visão Geral](#visão-geral)
+- [📖 Visão Geral](#visao-geral)
 - [📊 Fluxo do Processo](#fluxo-do-processo)
-- [🏗️ Arquitetura da Solução](#arquitetura-da-solução)
+- [🏗️ Arquitetura da Solução](#arquitetura-da-solucao)
 - [🗂️ Estrutura de Pastas](#estrutura-de-pastas)
 - [🧰 Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [🚀 Etapas do Projeto](#etapas-do-projeto)
 - [✅ Resultado Final](#resultado-final)
-- [🧠 O Que Você Aprende](#o-que-você-aprende)
+- [🧠 O Que Você Aprende](#o-que-voce-aprende)
 - [🧪 Como Reproduzir](#como-reproduzir)
 - [🙋‍♂️ Autor](#autor)
+
 
 [🔝 Voltar ao topo](#real-time-weather-alert-system-com-aws-e-api-tomorrowio)
 
