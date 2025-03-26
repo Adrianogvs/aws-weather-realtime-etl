@@ -31,13 +31,13 @@ Este sistema consome dados da API do Tomorrow.io, envia em tempo real para um st
 
 ## 📊 Fluxo do Processo
 
-![Fluxo do Processo](arquitetura/fluxo-processo.png)
+![Fluxo do Processo](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/arquitetura/fluxoDoProcesso.png)
 
 ---
 
 ## 🏗️ Arquitetura da Solução
 
-![Arquitetura](arquitetura/arquitetura.png)
+![Arquitetura](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/arquitetura/Arquitetura%20da%20Solu%C3%A7%C3%A3o.png)
 
 - **Camada de Ingestão:** Requisições à API Tomorrow.io executadas por uma função Lambda (Producer) e ingestão de dados em tempo real pelo Kinesis Data Stream.
 - **Camada de Processamento em Tempo Real:** Lambda (Consumer) processa os dados do Kinesis, avalia parâmetros e dispara alertas via SNS.
@@ -93,52 +93,63 @@ Essa estrutura permite fácil navegação, reprodutibilidade e clareza na docume
 ### 1️⃣ Obtenção da API Key
 - Crie uma conta em [Tomorrow.io](https://app.tomorrow.io/)
 - Gere uma API Key e configure como variável de ambiente `TOMORROW_API_KEY` <p>
-
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Obten%C3%A7%C3%A3o%20da%20API%20Key.png)
 
 
 ### 2️⃣ Criação do Kinesis Data Stream
 - Nome: `broker`
 - Serve como canal de ingestão para dados climáticos em tempo real
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Cria%C3%A7%C3%A3o%20do%20Kinesis%20Data%20Stream.png)
 
 ### 3️⃣ Lambda Producer
 - Nome: `producer`
 - Código: [lambda_function_producer.py](lambda/lambda_function_producer.py)
 - Objetivo: Consumir a API e enviar para o Kinesis
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Lambda%20Producer.png)
 
 ### 4️⃣ Tópico SNS para Alertas
 - Nome: `snsalerta`
 - Envia notificações para e-mail e SMS configurados
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/T%C3%B3pico%20SNS%20para%20Alertas.png)
 
 ### 5️⃣ Lambda Consumer (Realtime)
 - Nome: `consumer_realtime`
 - Código: [lambda_function_alert.py](lambda/lambda_function_alert.py)
 - Objetivo: Ler Kinesis, aplicar lógica de alerta e disparar mensagens via SNS
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Lambda%20Consumer%20(Realtime).png)
 
 ### 6️⃣ CloudWatch Events
 - Nome: `producer_event`
 - Cron: Executa a Lambda Producer a cada 3 minutos
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/CloudWatch%20Events%201.png)
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/CloudWatch%20Events%202.png)
 
 ### 7️⃣ Lambda Consumer (Batch)
 - Nome: `consumer_batch`
 - Código: [lambda_function_batch.py](lambda/lambda_function_batch.py)
 - Objetivo: Persistir os dados recebidos no S3 em formato JSON (camada raw)
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Lambda%20Consumer%20(Batch).png)
 
 ### 8️⃣ Glue Crawler (raw)
 - Nome: `raw_crawler`
 - Cria catálogo de dados a partir dos arquivos em `s3://alertarealtime/raw/`
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Glue%20Crawler%20(RAW).png)
 
 ### 9️⃣ Glue Job (ETL)
 - Nome: `weather_job`
 - Código: [jobglue.py](glue/jobglue.py)
 - Objetivo: Transformar dados JSON para Parquet particionado
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Glue%20Job%20(ETL).png)
 
 ### 🔟 Glue Crawler (gold)
 - Nome: `gold_crawler`
 - Atualiza o catálogo a partir dos arquivos tratados (camada gold)
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Glue%20Crawler%20(gold).png)
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Glue%20Crawler%20(gold)%20tabela.png)
 
 ### 1️⃣1️⃣ Amazon Athena
 - Permite consulta analítica SQL em cima dos dados armazenados no S3 (camada gold)
-
+![](https://github.com/Adrianogvs/aws-weather-realtime-etl/blob/main/imagens/Amazon%20Athena.png)
 ---
 
 ## ✅ Resultado Final
