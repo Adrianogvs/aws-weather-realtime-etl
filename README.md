@@ -185,6 +185,8 @@ cd aws-weather-realtime-etl
 export TOMORROW_API_KEY="sua-chave-da-api"
 ```
 
+A seguir, siga cada etapa numerada da seção [🚀 Etapas do Projeto](#etapas-do-projeto).
+
 ## 🙋‍♂️ Autor
 
 Projeto desenvolvido por **Adriano Vilela**  
