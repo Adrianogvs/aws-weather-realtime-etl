@@ -1,4 +1,4 @@
-## ✨ Laboratório AWS - Ingestão e Processamento de Dados Climáticos em Tempo Real (Tomorrow.io)
+## Laboratório AWS - Ingestão e Processamento de Dados Climáticos em Tempo Real (Tomorrow.io)
 
 Este repositório demonstra uma arquitetura em nuvem para ingestão, processamento e notificação de dados climáticos em tempo real usando a API Tomorrow.io com serviços AWS.
 
