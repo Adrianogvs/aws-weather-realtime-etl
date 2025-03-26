@@ -5,9 +5,6 @@ Este projeto simula a ingestão, tratamento e análise de dados climáticos em t
 > 📚 Este repositório serve como um **mini-curso prático**. Você vai aprender a construir arquiteturas de dados com foco em ingestão, transformação, persistência e orquestração na nuvem, usando os principais serviços gerenciados da AWS.
 
 ---
-
-## 📌 Índice
-
 ## 📌 Índice
 
 - [📖 Visão Geral](#visao-geral)
