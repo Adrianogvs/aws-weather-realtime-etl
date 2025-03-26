@@ -8,6 +8,8 @@ Este projeto simula a ingestão, tratamento e análise de dados climáticos em t
 
 ## 📌 Índice
 
+## 📌 Índice
+
 - [📖 Visão Geral](#visao-geral)
 - [📊 Fluxo do Processo](#fluxo-do-processo)
 - [🏗️ Arquitetura da Solução](#arquitetura-da-solucao)
@@ -19,8 +21,8 @@ Este projeto simula a ingestão, tratamento e análise de dados climáticos em t
 - [🧪 Como Reproduzir](#como-reproduzir)
 - [🙋‍♂️ Autor](#autor)
 
-
 [🔝 Voltar ao topo](#real-time-weather-alert-system-com-aws-e-api-tomorrowio)
+
 
 ---
 
@@ -182,10 +184,6 @@ cd aws-weather-realtime-etl
 # Configure sua variável de ambiente
 export TOMORROW_API_KEY="sua-chave-da-api"
 ```
-
-A seguir, siga cada etapa numerada da seção [🚀 Etapas do Projeto](#etapas-do-projeto).
-
----
 
 ## 🙋‍♂️ Autor
 
